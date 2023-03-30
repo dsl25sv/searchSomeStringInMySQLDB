@@ -12,7 +12,7 @@
 	/************************** Дальше ничего не меняем **************************/
 		
 	create temporary table queries (
-		id			int primary key auto_increment
+		id		int primary key auto_increment
 		, query		text
 	);
 	
