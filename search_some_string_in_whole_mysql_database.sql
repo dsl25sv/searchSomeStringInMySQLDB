@@ -31,7 +31,7 @@
 			, 'from '
 			, concat(t.table_schema, '.', t.table_name, ' ')
 			, 'where '
-			, concat(t.table_name, '.', c.column_name, ' like \'%', 	@search, '%\'')
+			, concat(t.table_name, '.', c.column_name, ' like \'%' ,@search , '%\'')
 		)
 	from
 		information_schema.tables t
