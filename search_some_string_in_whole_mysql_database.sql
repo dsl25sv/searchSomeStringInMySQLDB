@@ -27,11 +27,11 @@
 			, 'select '
 			, concat('\'', t.table_name, '\'', ' table_name ', ', ')
 			, concat('\'', c.column_name, '\'', ' column_name ', ', ')
-			, concat(t.table_name, '.', c.column_name, ' column_value ')
+			, concat('`', t.table_name, '`.`', c.column_name, '` column_value ')
 			, 'from '
-			, concat(t.table_schema, '.', t.table_name, ' ')
+			, concat('`', t.table_schema, '`.`', t.table_name, '` ')
 			, 'where '
-			, concat(t.table_name, '.', c.column_name, ' like \'%', @search, '%\'')
+			, concat('`', t.table_name, '`.`', c.column_name, '` like \'%', @search, '%\'')
 		)
 	from
 		information_schema.tables t
