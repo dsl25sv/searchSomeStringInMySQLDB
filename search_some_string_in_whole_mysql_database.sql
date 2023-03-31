@@ -63,20 +63,4 @@
 	execute stmt;
 	
 	deallocate prepare stmt;
-		
-		
-		
-		
-
-		
-	
-		
-		
-
-	
-	
-	
-	
-	
-		
 	
